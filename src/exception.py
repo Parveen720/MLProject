@@ -12,9 +12,11 @@ def error_message_detail(error,error_detail:sys):
 
 
 class CustomException(Exception):
+    #constructor hota h python ek tarike se ye def init
     def __init__(self,error_message,error_detail:sys):
         super().__init__(error_message)
+        #super use hota h parent class ka contructor k liye
         self.error_message=error_message_detail(error_message,error_detail=error_detail)
-
+        #self kaam aata h ek trike se value ko store krne k liye kisi m
         def __str__(self):
             return self.error_message
