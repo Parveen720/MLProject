@@ -1,1 +1,121 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Predictor</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #cfefff, #b3e5fc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 700px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 131, 184, 0.25);
+        }
+
+        h1 {
+            color: #0277bd;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #455a64;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .info-box {
+            background: #f1f9ff;
+            border-left: 5px solid #039be5;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            color: #0288d1;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #546e7a;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 14px 35px;
+            background: linear-gradient(135deg, #039be5, #0288d1);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #0288d1, #0277bd);
+            box-shadow: 0 10px 22px rgba(3, 155, 229, 0.45);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello World</h1>
+
+        <p>
+            Welcome to the <strong>Student Exam Predictor</strong>.  
+            This application helps estimate a student's <strong>Maths score</strong>
+            based on academic and background information.
+        </p>
+
+        <div class="info-box">
+            <h3>📊 What does this predictor use?</h3>
+            <ul>
+                <li>Gender</li>
+                <li>Ethnicity group</li>
+                <li>Parental education level</li>
+                <li>Lunch type</li>
+                <li>Test preparation course</li>
+                <li>Reading score</li>
+                <li>Writing score</li>
+            </ul>
+        </div>
+
+        <p>
+            Using these inputs, the system predicts a probable Maths score
+            to help understand performance trends.
+        </p>
+
+        <form action="/predictdata" method="get">
+        <button type="submit" class="btn">Start Prediction</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
